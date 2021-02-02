@@ -1,1 +1,0 @@
-function [handles]=GMMValidation_Campbell1997h(handles,filename)

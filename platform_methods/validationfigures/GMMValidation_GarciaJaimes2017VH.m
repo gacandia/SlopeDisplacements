@@ -1,1 +1,0 @@
-function [handles]=GMMValidation_GarciaJaimes2017VH(handles,filename)

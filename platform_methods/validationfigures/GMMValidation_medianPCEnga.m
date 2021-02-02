@@ -1,1 +1,0 @@
-function [handles]=GMMValidation_medianPCEnga(handles,filename)

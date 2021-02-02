@@ -1,1 +1,0 @@
-function [handles]=GMMValidation_Jaimes2015(handles,filename)
