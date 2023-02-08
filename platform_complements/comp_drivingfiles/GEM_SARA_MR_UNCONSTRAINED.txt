@@ -1,0 +1,147 @@
+# SUR DEL PERU
+truncexp PE-43b-ID243 SR 0.5 0.933411 4.5 8.4
+truncexp PE-43a-ID249 SR 0.5 0.933411 4.5 8.4
+truncexp PE-42a-ID253 SR 0.5 0.933411 4.5 8.4
+truncexp PE-42b-ID254 SR 0.5 0.933411 4.5 8.4
+truncexp PE-42c2-ID256 SR 0.5 0.933411 4.5 8.4
+truncexp PE-51b-ID257 SR 0.5 0.933411 4.5 8.4
+truncexp PE-51c-ID258 SR 0.5 0.933411 4.5 8.4
+truncexp PE-51a-ID259 SR 0.5 0.933411 4.5 8.4
+truncexp PE-45-ID260 SR 0.5 0.933411 4.5 8.4
+truncexp PE-38-ID261 SR 0.5 0.933411 4.5 8.4
+truncexp PE-44b-ID268 SR 0.5 0.933411 4.5 8.4
+truncexp PE-53-ID307 SR 0.5 0.933411 4.5 8.4
+truncexp PE-47-ID308 SR 0.5 0.933411 4.5 8.4
+
+# EAST-WEST FALUT SYSTEM
+truncexp CL-038-ID1 SR 0.5 0.936981 4.5 8.2
+truncexp CL-053-ID2 SR 0.5 0.936981 4.5 8.2
+truncexp CL-055-ID5 SR 0.5 0.936981 4.5 8.2
+
+# ATACAMA FAULT SYSTEM
+truncexp CL-054-ID8 SR 0.5 0.936981 4.5 8.2
+truncexp CL-044a-ID9 SR 0.5 0.936981 4.5 8.2
+truncexp CL-044b-ID10 SR 0.5 0.936981 4.5 8.2
+truncexp CL-044c-ID12 SR 0.5 0.936981 4.5 8.2
+truncexp CL-044f-ID13 SR 0.5 0.936981 4.5 8.2
+truncexp CL-043-ID14 SR 0.5 0.936981 4.5 8.2
+truncexp CL-046-ID15 SR 0.5 0.936981 4.5 8.2
+truncexp CL-036-ID16 SR 0.5 0.936981 4.5 8.2
+truncexp CL-044e-ID17 SR 0.5 0.936981 4.5 8.2
+truncexp CL-051-ID18 SR 0.5 0.936981 4.5 8.2
+truncexp CL-050-ID19 SR 0.5 0.936981 4.5 8.2
+truncexp CL-045-ID20 SR 0.5 0.936981 4.5 8.2
+truncexp CL-040-ID21 SR 0.5 0.936981 4.5 8.2
+truncexp CL-052-ID22 SR 0.5 0.936981 4.5 8.2
+truncexp CL-049-ID23 SR 0.5 0.936981 4.5 8.2
+truncexp CL-041-ID24 SR 0.5 0.936981 4.5 8.2
+
+# SAN RAMON FAULT
+truncexp CL-001a-ID81 SR 0.4 0.923346 4.5 7.8
+
+# PICHILEMU FAULT
+truncexp CL-003-ID82 SR 0.5 1.00839 4.5 7.5
+truncexp CL-002b-ID83 SR 0.5 1.00839 4.5 7.5
+truncexp CL-002c-ID84 SR 0.5 1.00839 4.5 7.5
+
+# ANDEAN TRANSVERSE FAULTS & LIQUIÑE-OFQUI FAULT SYSTEM
+truncexp CL-006ff-ID27 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006dd-ID28 SR 3 0.834489 4.5 7.75
+truncexp CL-031-ID29 SR 0.5 0.834489 4.5 7.75
+truncexp CL-028-ID30 SR 0.5 0.834489 4.5 7.75
+truncexp CL-032-ID31 SR 0.5 0.834489 4.5 7.75
+truncexp CL-034-ID32 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006kk-ID33 SR 3 0.834489 4.5 7.75
+truncexp CL-006jj-ID34 SR 3 0.834489 4.5 7.75
+truncexp CL-033-ID36 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006aaa-ID37 SR 3 0.834489 4.5 7.75
+truncexp CL-006ww-ID38 SR 3 0.834489 4.5 7.75
+truncexp CL-006rr-ID39 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006qq-ID40 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006mm-ID41 SR 3 0.834489 4.5 7.75
+truncexp CL-006vv-ID42 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006z-ID43 SR 3 0.834489 4.5 7.75
+truncexp CL-006zz-ID44 SR 3 0.834489 4.5 7.75
+truncexp CL-006uu-ID45 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006yy-ID46 SR 3 0.834489 4.5 7.75
+truncexp CL-006xx-ID47 SR 3 0.834489 4.5 7.75
+truncexp CL-006tt-ID48 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006iii-ID49 SR 3 0.834489 4.5 7.75
+truncexp CL-006ddd-ID50 SR 3 0.834489 4.5 7.75
+truncexp CL-006kkk-ID51 SR 3 0.834489 4.5 7.75
+truncexp CL-006mmm-ID52 SR 3 0.834489 4.5 7.75
+truncexp CL-006bbb-ID53 SR 3 0.834489 4.5 7.75
+truncexp CL-006eee-ID54 SR 3 0.834489 4.5 7.75
+truncexp CL-006pp-ID55 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006oo-ID56 SR 3 0.834489 4.5 7.75
+truncexp CL-035-ID57 SR 0.5 0.834489 4.5 7.75
+truncexp CL-029-ID58 SR 0.5 0.834489 4.5 7.75
+truncexp CL-025-ID59 SR 0.5 0.834489 4.5 7.75
+truncexp CL-026-ID60 SR 0.5 0.834489 4.5 7.75
+truncexp CL-027-ID61 SR 0.5 0.834489 4.5 7.75
+truncexp CL-024-ID62 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006w-ID63 SR 3 0.834489 4.5 7.75
+truncexp CL-020a-ID64 SR 0.5 0.834489 4.5 7.75
+truncexp CL-020b-ID65 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006x-ID67 SR 3 0.834489 4.5 7.75
+truncexp CL-021a-ID68 SR 0.5 0.834489 4.5 7.75
+truncexp CL-021b-ID69 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006r-ID70 SR 3 0.834489 4.5 7.75
+truncexp CL-006u-ID71 SR 3 0.834489 4.5 7.75
+truncexp CL-017-ID72 SR 0.5 0.834489 4.5 7.75
+truncexp CL-018-ID73 SR 0.5 0.834489 4.5 7.75
+truncexp CL-019-ID74 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006t-ID75 SR 3 0.834489 4.5 7.75
+truncexp CL-006q-ID76 SR 3 0.834489 4.5 7.75
+truncexp CL-006p-ID77 SR 3 0.834489 4.5 7.75
+truncexp CL-015-ID78 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006o-ID79 SR 3 0.834489 4.5 7.75
+truncexp CL-004b-ID80 SR 0.5 1.00839 4.5 7.5
+truncexp CL-006e-ID85 SR 3 0.834489 4.5 7.75
+truncexp CL-012-ID86 SR 0.5 0.834489 4.5 7.75
+truncexp CL-013-ID87 SR 0.5 0.834489 4.5 7.75
+truncexp CL-010-ID88 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006m-ID89 SR 3 0.834489 4.5 7.75
+truncexp CL-006gc-ID90 SR 3 0.834489 4.5 7.75
+truncexp CL-006gb-ID91 SR 3 0.834489 4.5 7.75
+truncexp CL-008-ID92 SR 0.5 0.834489 4.5 7.75
+truncexp CL-007-ID93 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006j-ID94 SR 3 0.834489 4.5 7.75
+truncexp CL-006k-ID95 SR 3 0.834489 4.5 7.75
+truncexp CL-006b-ID96 SR 3 0.834489 4.5 7.75
+truncexp CL-006a-ID97 SR 3 0.834489 4.5 7.75
+truncexp CL-006f-ID98 SR 3 0.834489 4.5 7.75
+truncexp CL-006n-ID99 SR 3 0.834489 4.5 7.75
+truncexp CL-009-ID100 SR 0.5 0.834489 4.5 7.75
+truncexp CL-014-ID101 SR 0.5 0.834489 4.5 7.75
+truncexp CL-023a-ID102 SR 0.5 0.834489 4.5 7.75
+truncexp CL-023c-ID103 SR 0.5 0.834489 4.5 7.75
+truncexp CL-016-ID104 SR 0.5 0.834489 4.5 7.75
+truncexp CL-005-ID105 SR 0.5 0.834489 4.5 7.75
+truncexp CL-006aa-ID106 SR 3 0.834489 4.5 7.75
+truncexp CL-022-ID107 SR 0.5 0.834489 4.5 7.75
+truncexp CL-011-ID108 SR 0.5 0.834489 4.5 7.75
+truncexp AR-0236d-ID182 SR 0.255 0.923346 4.5 7.8
+truncexp AR-0236f-ID183 SR 0.5 0.923346 4.5 7.8
+truncexp AR-0236i-ID184 SR 0.26 0.923346 4.5 7.8
+truncexp AR-0236l-ID186 SR 0.26 0.923346 4.5 7.8
+truncexp AR-0236m-ID187 SR 0.26 0.923346 4.5 7.8
+truncexp AR-0236j-ID188 SR 0.26 0.923346 4.5 7.8
+truncexp AR-0236a-ID190 SR 0.26 0.923346 4.5 7.8
+truncexp AR-0236g-ID191 SR 1.25 0.923346 4.5 7.8
+truncexp AR-0236b-ID982 SR 0.26 0.923346 4.5 7.8
+
+# MAGALLANES-FAGNANO FAULT SYSTEM
+truncexp CL-056b-ID109  SR 5    0.85 4.5 7.8 # From Santibañez et al. 2019                                                       
+truncexp CL-056c-ID110  SR 0.33 0.85 4.5 7.8 # Crustal faults in the Chilean Andes: geological constraints and seismic potential 
+truncexp CL-056d-ID111  SR 0.33 0.85 4.5 7.8 #  sr= 0.5-0.7cm/y                                                                  
+truncexp CL-056e-ID112  SR 0.33 0.85 4.5 7.8 #                                                                                   
+truncexp CL-056f-ID113  SR 2.5  0.85 4.5 7.8 #                                                                                   
+truncexp CL-056g-ID114  SR 2.5  0.85 4.5 7.8 #                                                                                   
+truncexp CL-056h-ID115  SR 0.33 0.85 4.5 7.8 #                                                                                   
+truncexp CL-056i-ID116  SR 0.33 0.85 4.5 7.8 #                                                                                   
+truncexp CL-056j-ID117  SR 0.33 0.85 4.5 7.8 #                                                                                   
+truncexp AR-0056a-ID163 SR 3    0.85 4.5 7.8 #                                                                                   
+truncexp AR-0056b-ID164 SR 5    0.85 4.5 7.8 #                                                                                   
+truncexp AR-0056d-ID166 SR 5    0.85 4.5 7.8 #                                                                                   
+truncexp AR-0056g-ID167 SR 5    0.85 4.5 7.8 #                                                                                   

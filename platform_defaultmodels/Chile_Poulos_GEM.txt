@@ -1,0 +1,75 @@
+Option 0 - Global Parameters
+Projection   : WGS84
+Image        : chile.mat
+Boundary     : CHL_adm1.shp
+ShearModulus : 3e11      #dyne/cm2
+IM           : 0.01
+im           : 
+MaxDistance  : 500 500 200 500 # Maximum distance for {interface;intraslab;crustal;unknown}
+MagDiscrete  : gauss 6
+Sigma        : truncate 3
+PCE          : shuffle MC 500
+IM1          : 0.01
+IM2          : 1.25
+Spatial      : spa_SR2019
+Spectral     : corr_BCHhydro2016
+SourceDeagg  : on
+Clusters     : off 100 1
+
+Option 1 - Logic Tree Weights
+Geom Weight : 1
+Gmpe Weight : 0.25 0.25 0.25 0.25
+Mscl Weight : 1 
+ 
+#              GMM                     LLH                   w        
+#    {'Kuehn2020'          }    0.211301314635961    0.261706498312721
+#    {'Parker2020'         }    0.299573715293244    0.246173820728571
+#    {'MontalvaBastias2017'}    0.314214961672407    0.243688150488942
+#    {'AG2020'             }    0.286402772996528    0.248431530469766
+
+Option 2 - Source Geometry
+geometry 1
+area1 zone1 interface normal strasser2010 0 1 60 rigid zone1.mat
+area1 zone2 interface normal strasser2010 0 1 60 rigid zone2.mat
+area1 zone3 interface normal strasser2010 0 1 60 rigid zone3.mat
+area1 zone4 intraslab normal strasser2010 0 2 60 rigid zone4.mat
+area1 zone5 intraslab normal strasser2010 0 2 60 rigid zone5.mat
+area1 zone6 intraslab normal strasser2010 0 2 60 rigid zone6.mat
+area1 zone7 intraslab normal strasser2010 0 2 60 rigid zone7.mat
+area1 zone8 interface normal strasser2010 0 1 60 rigid zone8.mat
+call GEM_SARA_SOURCES.txt
+
+Option 3 - GMPE Library
+gmm at1   Kuehn2020 interface global 0 0 0           
+gmm at2   Kuehn2020 intraslab global 0 0 0
+gmm at3   Parker2020 interface global no      
+gmm at4   Parker2020 intraslab global no         
+gmm at5   MontalvaBastias2017 interface forearc
+gmm at6   MontalvaBastias2017 intraslab forearc
+gmm at7   AG2020 interface global
+gmm at8   AG2020 intraslab global
+gmm at9   ASK2014 auto mainshock measured global
+
+Option 4 - GMPE GROUPS
+gmmgroup Kuehn2020       1 2 9
+gmmgroup Parker2020      3 4 9
+gmmgroup Montalva2017    5 6 9
+gmmgroup AG2020          7 8 9
+
+Option 5 - MAGNITUDE SCALING RELATIONS
+seismicity 1
+truncexp zone1 NM 6.3096 0.8700 5 9.2
+truncexp zone2 NM 9.1201 0.8800 5 9.3
+truncexp zone3 NM 2.5704 0.7700 5 9.6
+truncexp zone4 NM 4.0738 0.9000 5 8.6
+truncexp zone5 NM 4.7911 1.0400 5 8.4
+truncexp zone6 NM 3.7154 1.1100 5 8.4
+truncexp zone7 NM 2.6303 0.9800 5 8.5
+truncexp zone8 NM 1.6653 0.7700 5 8.5 # NMmin_zone3*Area_zone8/Area_zone3
+call GEM_SARA_MR_CONSTRAINED.txt
+
+Option 6 - Pre defined sites
+site1 -69.71558134308944 -54.20544113580332 0.000000 VS30 900 Z10 0.4 Z25 0.607
+
+Option 7 - Spacial distributed data
+layer VS30 SantiagoBasin_LR.mat CHI_SIGAS.mat CHI_USGS.mat 760

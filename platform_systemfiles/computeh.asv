@@ -1,0 +1,21 @@
+function[h,h2]=computeh(site)
+
+% tic
+% X = site(:,1);
+% Y = site(:,2);
+% Z = site(:,3);
+% [XX,YY]= meshgrid(X,Y);
+% [~,ZZ]= meshgrid(X,Z);
+% h = ((XX-XX').^2+(YY-YY').^2+(ZZ-ZZ').^2).^0.5;
+% toc
+
+% tic
+N = size(site,1);
+h2 = zeros(N);
+for i=1:N-1
+    IND = i:N;
+    h2(IND,i)=sum((site(i,:)-site(i:N,:)).^2,2);
+end
+h2=h2+h2';
+h2=h2.^0.5;
+% toc

@@ -1,0 +1,63 @@
+Option 0 - Global Parameters
+Projection   : WGS84
+Image        : chile.mat
+Boundary     : CHL_adm1.shp
+ShearModulus : 3e11      #dyne/cm2
+IM           : PGA 1
+im           : 
+MaxDistance  : 500
+MagDiscrete  : gauss 10
+Sigma        : 
+PCE          : shuffle MC 500
+IM1          : 0.01
+IM2          : 1
+Spatial      : 
+Spectral     : 
+SourceDeagg  : on
+Clusters     : off 100 1
+
+Option 1 - Logic Tree Weights
+Geom Weight : 1
+Gmpe Weight : 1
+Mscl Weight : 1 
+
+Option 2 - Source Geometry
+geometry 1
+area1 S12  interface  -999 wc1994 0  1  30 0 0 leak -72.75  -34.00  -5.00    -71.00 -34.00  -82.92   -71.00 -32.00  -82.92   -72.75 -32.00 -5.00  
+
+Option 3 - GMPE Library
+gmm at1  PCE_bchydro
+
+Option 4 - GMPE GROUPS
+gmmgroup PCEBChydro      1
+
+Option 5 - MAGNITUDE SCALING RELATIONS
+seismicity 1
+truncexp S12  NM 2.344 0.70 5 8.5
+
+Option 6 - Pre defined sites
+LasCondes1 -70.5635 -33.4124 0 VS30 760 ky 0.14 covky 0.2 Ts 0.33 covTs 0.1
+
+Option PSDA 1 - PSDA setup
+d         : logsp(1,200,10)  # cm
+realSa    : 30
+realD     : 40
+rng       : shuffle
+optimize  : on # optimize "on" uses the conditional term M|Sa in M-dependent CDMs
+kysamples : 1
+Tssamples : 1                                                                                                     
+
+Option PSDA 2 Library of Slope Displacement Models
+#psda PCE1   BMT2017_cdmM full PC
+#psda PCE2   BT2007_cdmM  full PC
+psda PCE3   BT2007_cdm   full MC
+#psda PCE4   PLSR_cdmMF   full PC
+
+
+Option PSDA 4 Slope Displacement Models with PC
+#PC1 hazard 1 1 1  PCE1 null null null
+#PC2 hazard 1 1 1  PCE2 null null null
+PC3 hazard 1 1 1  PCE3 null null null
+#PC4 hazard 1 1 1 PCE4 null null null
+
+

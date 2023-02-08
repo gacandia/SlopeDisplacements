@@ -1,0 +1,63 @@
+Option 0 - Global Parameters
+Projection   : WGS84
+Image        : chile.mat
+Boundary     : CHL_adm1.shp
+ShearModulus : 3e11      #dyne/cm2
+IM           : -1 PGA
+im           : 
+MaxDistance  : 500
+MagDiscrete  : gauss 10
+Sigma        : 
+PCE          : shuffle MC 500
+IM1          : 0.01
+IM2          : 1
+Spatial      : 
+Spectral     : 
+SourceDeagg  : on
+Clusters     : off 100 1
+
+Option 1 - Logic Tree Weights
+Geom Weight : 1
+Gmpe Weight : 1
+Mscl Weight : 1 
+
+Option 2 - Source Geometry
+geometry 1
+area1 S12  interface  -999 wc1994 0  1  30 0 0 leak -72.75  -34.00  -5.00    -71.00 -34.00  -82.92   -71.00 -32.00  -82.92   -72.75 -32.00 -5.00  
+area1 S13  interface  -999 wc1994 0  1  30 0 0 leak -73.00  -34.50  -5.00    -71.25 -34.50  -88.41   -71.25 -34.00  -88.41   -73.00 -34.00 -5.00  
+area1 S14  interface  -999 wc1994 0  1  30 0 0 leak -73.50  -35.50  -5.00    -71.25 -35.50  -115.51  -71.25 -34.50  -115.51  -73.50 -34.50 -5.00  
+
+Option 3 - GMPE Library
+gmm at1 SiberRisk2019 interface
+                                         
+Option 4 - GMPE GROUPS
+gmmgroup SiberRisk 1
+
+Option 5 - MAGNITUDE SCALING RELATIONS
+seismicity 1
+truncexp S12  NM 2.344 0.70 5 8.5
+truncexp S13  NM 0.588 0.70 5 8.5
+truncexp S14  NM 1.513 0.70 5 8.5
+
+Option 6 - Pre defined sites
+LasCondes1 -70.5635 -33.4124 0 VS30 760 ky 0.14 covky 0.2 Ts 0.33 covTs 0.1
+LasCondes3 -70.5635 -34.4124 0 VS30 760 ky 0.13 covky 0.1 Ts 0.43 covTs 0.1
+
+Option PSDA 1 - PSDA setup
+d         : logsp(1,200,10)  # cm
+realSa    : 30
+realD     : 40
+rng       : shuffle
+optimize  : on # optimize "on" uses the conditional term M|Sa in M-dependent CDMs
+kysamples : 1
+Tssamples : 1                                                                                                     
+
+Option PSDA 2 Library of Slope Displacement Models
+psda VEC1 MC2022MF  0.6
+psda VEC2 RS09V     0.6 #PGA-PGV correlation
+psda VEC3 RA2011    0.6 0.6 0.5 0.15 0 #rho rhok Tm_mean Tm_cov Tm_Nsta 
+
+Option PSDA 3 Slope Displacement Models
+SL1 VEC1 null null null 0.3333333333
+SL1 VEC2 null null null 0.3333333333
+SL1 VEC3 null null null 0.3333333333

@@ -1,0 +1,130 @@
+Option 0 - Global Parameters
+Projection   : WGS84
+Image        : mexico_DF.mat
+Boundary     : MEX_adm0.shp
+ShearModulus : 3e11      #dyne/cm2
+IM           : PGA
+im           : logsp(0.01,1,20)
+MaxDistance  : 1000
+MagDiscrete  : gauss 10
+Sigma        : 
+PCE          : shuffle MC 500
+IM1          : 0.01  
+IM2          : 1
+Spatial      : 
+Spectral     : 
+SourceDeagg  : on
+Clusters     : off 100 1
+
+Option 1 - Logic Tree Weights
+Geom Weight : 1
+Gmpe Weight : 1
+Mscl Weight : 1 
+
+Option 2 - Source Geometry
+geometry 1
+area1 BCIntraplacaNorte      intraslab  -999 wc1994 0 3   60 0 60 leak  -119.25 34.56 -10 -118.125 33.06 -10 -117 31.56 -10 -115.875 30.06 -10 -114.75 28.56 -10 -113.58 29.44 -10 -114.705 30.94 -10 -115.83 32.44 -10 -116.995 33.94 -10 -118.08 35.44 -10                 
+area1 BCIntraplacaSur        intraslab  -999 wc1994 0 3   60 0 60 leak  -114.75 28.56 -10 -113.625 27.06 -10 -112.5 25.56 -10 -111.375 24.06 -10 -110.25 22.56 -10 -109.08 23.44 -10 -110.205 24.94 -10 -111.33 26.44 -10 -112.455 27.94 -10 -113.58 29.44 -10               
+area1 BCInterplacaNorte      intraslab  -999 wc1994 0 3   60 0 60 leak  -117 33.99 -7 -116.305 33.068 -7 -115.61 32.145 -7 -114.915 31.223 -7 -114.22 30.3 -7 -113.53 30.82 -7 -114.223 31.743 -7 -114.915 32.665 -7 -115.608 33.588 -7 -116.3 34.51 -7                      
+area1 BCInterplacaCentro     intraslab  -999 wc1994 0 3   60 0 60 leak  -114.22 30.3 -10 -113.36 29.155 -10 -112.5 28.01 -10 -111.81 28.53 -10 -112.67 29.675 -10 -113.53 30.82 -10                                                                                          
+area1 BCInterplacaSur        intraslab  -999 wc1994 0 3   60 0 60 leak  -108 22 -10 -107.1 23 -10 -108.65 25 -10 -110.55 27.61 -10 -111.86 28.48 -10 -112.5 28 -10 -110.25 25 -10                                                                                            
+area1 SierraMadreOccidental  intraslab  -999 wc1994 0 3   60 0 60 leak  -110 29 -20 -110.55 27.61 -20 -108.65 25 -20 -106 25 -20 -106 29 -20                                                                                                                                 
+area1 CuencasSierras         intraslab  -999 wc1994 0 3   60 0 60 leak  -110 34 -20 -110 29 -20 -106 29 -20 -106 25 -20 -104 25 -20 -104 29 -20 -105 34 -20                                                                                                                  
+area1 CuencaBurgos           intraslab  -999 wc1994 0 3   60 0 60 leak  -104 27.5 -20 -104 22 -20 -99.5 22 -20 -99.5 27.5 -20                                                                                                                                                
+area1 InterfazPacificoRivera intraslab  -999 wc1994 0 3   60 0 60 leak  -110 18.5 -5 -106 18.5 -5 -106 20 -5 -108 20 -5 -108 22 -5 -110 22 -5                                                                                                                                
+area1 SisDifusa1             intraslab  -999 wc1994 0 3   60 0 60 leak  -105 34 -20 -104 29 -20 -104 27.5 -20 -99.5 27.5 -20 -99.5 22 -20 -104 22 -20 -104 25 -20 -108.65 25 -20 -106 21.5 -20 -105.5 20 -20 -105 21 -20 -100.28 20.54 -20 -96.5 20.2 -20 -97 34 -20         
+area1 SisDifusa2             intraslab  -999 wc1994 0 3   60 0 60 leak  -116.3 34.51 -20 -113.53 30.82 -20 -111.81 28.53 -20 -110.55 27.61 -20 -110 29 -20 -110 34 -20                                                                                                       
+area1 Centroamerica          intraslab  -999 wc1994 0 3   60 0 60 leak  -88.2 15.8 -5 -85.3 15.8 -5 -85.3 17 -5 -88.2 17 -5                                                                                                                                                  
+area1 SubChiapas             interface  -999 wc1994 0 1   60 0 60 leak  -94.018 14.527 -15 -92.667 13.62 -15 -92.301 14.069 -30 -93.613 15.1 -30                                                                                                                             
+area1 SubBrechaTehuantepec   interface  -999 wc1994 0 1   60 0 60 leak  -95 15.197 -15 -94.018 14.527 -15 -93.613 15.1 -30 -93.987 15.392 -30 -95 15.91 -30                                                                                                                  
+area1 SubOaxacaEste          interface  -999 wc1994 0 1   60 0 60 leak  -96.349 15.526 -15 -96 15.5 -15 -95 15.197 -15 -95 15.91 -30 -96.267 16.257 -30                                                                                                                      
+area1 SubOaxaca1             interface  -999 wc1994 0 1   60 0 60 leak  -97.354 15.67 -15 -96.349 15.526 -15 -96.267 16.257 -30 -97.21 16.443 -30                                                                                                                            
+area1 SubOaxaca2             interface  -999 wc1994 0 1   60 0 60 leak  -97.877 15.775 -15 -97.354 15.67 -15 -97.21 16.443 -30 -97.655 16.528 -30                                                                                                                            
+area1 SubOaxacaOeste         interface  -999 wc1994 0 1   60 0 60 leak  -98.242 15.873 -15 -97.887 15.775 -15 -97.655 16.528 -30 -98.035 16.591 -30                                                                                                                          
+area1 SubOmetepec            interface  -999 wc1994 0 1   60 0 60 leak  -99.663 16.343 -15 -98.242 15.873 -15 -98.035 16.591 -30 -99.438 17.01 -30                                                                                                                           
+area1 SubSanMarcos           interface  -999 wc1994 0 1   60 0 60 leak  -100.062 16.473 -15 -99.663 16.343 -15 -99.438 17.01 -30 -99.836 17.143 -30                                                                                                                          
+area1 SubGuerrero            interface  -999 wc1994 0 1   60 0 60 leak  -101.005 16.797 -15 -100.062 16.473 -15 -99.836 17.143 -30 -100.81 17.437 -30                                                                                                                        
+area1 SubPetatlan            interface  -999 wc1994 0 1   60 0 60 leak  -101.701 17.044 -15 -101.005 16.797 -15 -100.81 17.437 -30 -101.499 17.709 -30                                                                                                                       
+area1 SubMichoacan           interface  -999 wc1994 0 1   60 0 60 leak  -103.135 17.701 -15 -101.701 17.044 -15 -101.499 17.709 -30 -102.916 18.393 -30                                                                                                                      
+area1 SubColima1             interface  -999 wc1994 0 1   60 0 60 leak  -103.868 18.3 -15 -103.135 17.701 -15 -102.916 18.393 -30 -103.612 18.761 -30                                                                                                                        
+area1 SubBrechaColima        interface  -999 wc1994 0 1   60 0 60 leak  -104.457 18.717 -15 -103.868 18.3 -15 -103.612 18.761 -30 -104.182 19.173 -30                                                                                                                        
+area1 SubJalisco             interface  -999 wc1994 0 1   60 0 60 leak  -104.457 18.717 -15 -104.182 19.173 -15 -105 20 -15 -105.13 20.256 -15 -105.5 21 -30 -106 21 -30 -105.7 20 -30 -105 19.1 -30                                                                         
+area1 JaliscoNuevo           interface  -999 wc1994 0 1   60 0 60 leak  -106 21 -15 -105.7 20 -15 -105 19.1 -15 -104 18.4 -15 -103.73 18.84 -30 -104 19 -30 -105 20 -30 -105.5 21 -30                                                                                        
+area1 GroMichNuevo           interface  -999 wc1994 0 1   60 0 60 leak  -104 18.4 -15 -103 17.6 -15 -102 17.15 -15 -101 16.8 -15 -100 16.45 -15 -99 16.1 -15 -98.82 16.81 -30 -100 17.2 -30 -101 17.5 -30 -102 17.9 -30 -103.73 18.84 -30                                    
+area1 OaxacaNuevo            interface  -999 wc1994 0 1   60 0 60 leak  -99 16.1 -15 -98 15.8 -15 -97 15.6 -15 -96 15.5 -15 -95 15.2 -15 -95 15.9 -30 -96 16.2 -30 -97 16.4 -30 -98 16.6 -30 -98.82 16.81 -30                                                                
+area1 ChiapasNuevo           interface  -999 wc1994 0 1   60 0 60 leak  -95 15.2 -15 -92.67 13.62 -15 -92.3 14.08 -30 -94 15.4 -30 -95 15.9 -30                                                                                                                              
+area1 ProfIntOeste           intraslab  -999 wc1994 0 4   60 0 60 leak  -105.5 21 -30 -105 20 -30 -104 19 -30 -102 17.9 -30 -101 17.5 -30 -100 17.2 -30 -99 16.85 -30 -99 19.1 -100 -100 19.2 -100 -101 19.1 -100 -102 19.2 -100 -103.3 19.3 -100 -104 19.8 -100 -105 21 -100   
+area1 ProfIntCentro          intraslab  -999 wc1994 0 4   60 0 60 leak  -99 16.85 -30 -98 16.6 -30 -97 16.4 -30 -96 16.2 -30 -95 15.9 -30 -95 17.2 -100 -96 18.3 -100 -97 18.8 -100 -98 18.9 -100 -99 19.1 -100                                                              
+area1 ProfIntEste            intraslab  -999 wc1994 0 4   60 0 60 leak  -95 15.9 -30 -94 15.4 -30 -92.3 14.08 -30 -91.5 14.9 -100 -94 16.5 -100 -95 17.2 -100                                                                                                                
+area1 Petrolera              intraslab  -999 wc1994 0 3   60 0 60 leak  -92.5 18.5 -30 -92 19 -30 -93 19.125 -30 -94 19.25 -30 -96 19.5 -30 -96 18.5 -30 -95.5 18 -30 -95 17.5 -30 -94 17.5 -30 -93 17.5 -30                                                                 
+area1 Golfo                  intraslab  -999 wc1994 0 3   60 0 60 leak  -96.5 21 -15 -96.5 20.2 -15 -96 19.5 -15 -92 19 -15 -91 21 -15 -94 21 -15                                                                                                                            
+area1 EjeVolcanico           intraslab  -999 wc1994 0 3   60 0 60 leak  -105.5 20 -15 -103.15 18.5 -15 -99 18.5 -15 -96 18.5 -15 -96 19.5 -15 -96.5 20.2 -15 -100.28 20.54 -15 -105 21 -15                                                                                   
+area1 Intraplaca             intraslab  -999 wc1994 0 3   60 0 60 leak  -103.15 18.5 -15 -97 16 -15 -95 16.2 -15 -94 16 -15 -93 17.5 -15 -96 18.5 -15 -99 18.5 -15                                                                                                           
+area1 ChiapasVolcan          intraslab  -999 wc1994 0 3   60 0 60 leak  -93 17.5 -15 -94 16 -15 -91.8 14 -15 -89 14 -15 -88 16 -15 -90.25 17.25 -15                                                                                                                          
+area1 ProfundosChiapas       intraslab  -999 wc1994 0 4   60 0 60 leak  -96 18.3 -100 -95 17.2 -100 -94 16.5 -100 -91.9 15.15 -100 -91.6 15.5 -200 -93.3 16.75 -200 -95 18 -200                                                                                              
+area1 Motagua1               intraslab  -999 wc1994 0 3   60 0 60 leak  -93 15.2 -5 -92.4 14.45 -5 -90 14.5 -5 -89 14.5 -5 -88 15.1 -5 -88 16.3 -5 -89.55 15.2 -5                                                                                                            
+area1 Motagua2               intraslab  -999 wc1994 0 3   60 0 60 leak  -93 15.2 -10 -92.4 14.45 -10 -90 14.5 -10 -89 14.5 -10 -88 15.1 -10 -88 16.3 -10 -89.55 15.2 -10                                                                                                     
+area1 Motagua3               intraslab  -999 wc1994 0 3   60 0 60 leak  -93 15.2 -15 -92.4 14.45 -15 -90 14.5 -15 -89 14.5 -15 -88 15.1 -15 -88 16.3 -15 -89.55 15.2 -15                                                                                                     
+area1 Polochic1              intraslab  -999 wc1994 0 3   60 0 60 leak  -94 16 -5 -93 15.2 -5 -89.55 15.2 -5 -88 16.3 -5                                                                                                                                                     
+area1 Polochic2              intraslab  -999 wc1994 0 3   60 0 60 leak  -94 16 -10 -93 15.2 -10 -89.55 15.2 -10 -88 16.3 -10                                                                                                                                                 
+area1 Polochic3              intraslab  -999 wc1994 0 3   60 0 60 leak  -94 16 -15 -93 15.2 -15 -89.55 15.2 -15 -88 16.3 -15                                                                                                                                                 
+                                                                                                                                                                                                                                                                 
+Option 3 - GMPE Library
+gmm at1 Jaimes2006
+gmm at2 Youngs1997 intraslab
+gmm at3 AtkinsonBoore2003 intraslab general
+gmm at4 Jaimes2015 CU
+
+Option 4 - GMPE GROUPS
+gmmgroup group 1 2 3 4
+
+Option 5 - MAGNITUDE SCALING RELATIONS
+seismicity 1
+truncexp  BCIntraplacaNorte      NM 1.141 0.421 4.5 5.8          # beta 0.970    
+truncexp  BCIntraplacaSur        NM 1.210 0.405 4.5 5.8          # beta 0.933
+truncexp  BCInterplacaNorte      NM 2.509 0.774 4.5 7.7          # beta 1.782
+truncexp  BCInterplacaCentro     NM 0.726 0.711 4.5 7.4          # beta 1.637
+truncexp  BCInterplacaSur        NM 2.090 0.727 4.5 7.2          # beta 1.674
+truncexp  SierraMadreOccidental  NM 0.116 1.251 4.5 5.6          # beta 2.880
+truncexp  CuencasSierras         NM 0.269 1.251 4.5 5.6          # beta 2.880
+truncexp  CuencaBurgos           NM 0.187 1.251 4.5 5.6          # beta 2.880
+truncexp  InterfazPacificoRivera NM 3.409 0.754 4.5 7.2          # beta 1.736
+truncexp  SisDifusa1             NM 0.658 1.251 4.5 5.6          # beta 2.880
+truncexp  SisDifusa2             NM 0.180 1.251 4.5 5.6          # beta 2.880
+truncexp  Centroamerica          NM 0.497 0.843 4.5 7.7          # beta 1.942
+truncnorm SubChiapas             NM 0.0535 7.0 8.400 7.50 0.270  # Median value time 18.7 
+truncnorm SubBrechaTehuantepec   NM 0.0405 7.0 8.400 7.50 0.270  # Median value time 24.7 
+truncnorm SubOaxacaEste          NM 0.0403 7.0 8.400 7.50 0.270  # Median value time 24.8 
+truncnorm SubOaxaca1             NM 0.0254 7.0 8.400 7.50 0.270  # Median value time 39.4 
+truncnorm SubOaxaca2             NM 0.0128 7.0 8.400 7.50 0.270  # Median value time 77.9 
+truncnorm SubOaxacaOeste         NM 0.0096 7.0 8.400 7.50 0.270  # Median value time 104.7
+truncnorm SubOmetepec            NM 0.0375 7.0 8.400 7.50 0.270  # Median value time 26.7 
+truncnorm SubSanMarcos           NM 0.0111 7.0 8.400 7.50 0.270  # Median value time 89.9  
+truncnorm SubGuerrero            NM 0.0252 7.0 8.400 7.50 0.270  # Median value time 39.7 
+truncnorm SubPetatlan            NM 0.0190 7.0 8.400 7.50 0.270  # Median value time 52.6 
+truncnorm SubMichoacan           NM 0.0391 7.0 8.400 7.50 0.270  # Median value time 25.6 
+truncnorm SubColima1             NM 0.0211 7.0 8.400 7.50 0.270  # Median value time 47.5 
+truncnorm SubBrechaColima        NM 0.0176 7.0 8.400 7.50 0.270  # Median value time 56.7 
+truncnorm SubJalisco             NM 0.0505 7.0 8.400 7.50 0.270  # Median value time 19.8 
+truncexp  JaliscoNuevo           NM 2.014   0.793  4.5 7.2       # beta 1.827
+truncexp  GroMichNuevo           NM 4.792   0.672  4.5 7.2       # beta 1.547
+truncexp  OaxacaNuevo            NM 6.717   0.802  4.5 7.2       # beta 1.847 
+truncexp  ChiapasNuevo           NM 18.938  0.894  4.5 7.2       # beta 2.059 
+truncexp  ProfIntOeste           NM 2.161   0.738  4.5 7.8       # beta 1.699    
+truncexp  ProfIntCentro          NM 1.714   0.684  4.5 7.9       # beta 1.576
+truncexp  ProfIntEste            NM 2.78    0.765  4.5 7.8       # beta 1.761
+truncexp  Petrolera              NM 0.6045  1.324  4.5 6.7       # beta 3.050
+truncexp  Golfo                  NM 0.1053  1.174  4.5 6.5       # beta 2.7043
+truncexp  EjeVolcanico           NM 0.249   0.818  4.5 7.2       # beta 1.884
+truncexp  Intraplaca             NM 1.440   0.820  4.5 6.5       # beta 1.889
+truncexp  ChiapasVolcan          NM 1.610   0.871  4.5 7.0       # beta 2.0048
+truncexp  ProfundosChiapas       NM 2.5161  0.958  4.5 7.5       # beta 2.2074
+truncexp  Motagua1               NM 0.277   0.970  5.0 7.8       # beta 2.234
+truncexp  Motagua2               NM 0.277   0.970  5.0 7.8       # beta 2.234
+truncexp  Motagua3               NM 0.277   0.970  5.0 7.8       # beta 2.234
+truncexp  Polochic1              NM 0.120   0.950  5.0 7.8       # beta 2.187
+truncexp  Polochic2              NM 0.120   0.950  5.0 7.8       # beta 2.187 
+truncexp  Polochic3              NM 0.120   0.950  5.0 7.8       # beta 2.187 
+
+Option 6 - Pre defined sites
+CU-UNAM  -99.181076 19.33024 0 VS30 1000
